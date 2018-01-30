@@ -1,0 +1,94 @@
+body {
+  background-color: #dcbb9a;
+  color: #000000; }
+
+#content {
+  width: 960px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px; }
+  #content .fr {
+    float: right; }
+  #content .fl {
+    float: left; }
+  #content h1 {
+    color: #893c00;
+    text-align: center; }
+  #content h2 {
+    color: #893c00; }
+  #content p {
+    width: 100%; }
+  #content a {
+    color: #3d70a1; }
+  #content .img-left {
+    float: left;
+    margin: 0 18px 18px 0; }
+  #content .img-right {
+    float: right;
+    margin: 0 0 18px 18px; }
+  #content img {
+    position: relative;
+    border: solid 2px #fff;
+    outline: solid 2px #893c00; }
+  #content .brief {
+    position: relative;
+    float: left;
+    width: 425px;
+    background: #fadcba;
+    padding: 20px;
+    box-sizing: border-box;
+    margin: 0 18px 18px 0;
+    color: #000000; }
+  #content table {
+    border-collapse: collapse;
+    text-align: left; }
+    #content table caption {
+      text-align: right; }
+    #content table th {
+      text-transform: uppercase;
+      background: #e0e0e0;
+      font-weight: 400;
+      padding: 10px; }
+    #content table th:not(:last-child) {
+      border-right: 1px solid #fff; }
+    #content table tr {
+      border-bottom: 1px solid #e0e0e0;
+      background: #fff; }
+      #content table tr td {
+        padding: 10px; }
+  #content form label {
+    display: block;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    color: #808080; }
+  #content form {
+    color: #808080; }
+    #content form .field {
+      position: relative;
+      display: block;
+      width: 100%;
+      margin-bottom: 15px; }
+    #content form input:not([type="submit"]) {
+      width: 100%;
+      box-sizing: border-box;
+      padding: 5px;
+      color: #808080; }
+    #content form textarea {
+      width: 100%;
+      height: 180px;
+      box-sizing: border-box;
+      padding: 5px;
+      color: #808080; }
+    #content form .double {
+      width: 477px; }
+    #content form input[type="submit"] {
+      background: #fff;
+      border: 1px solid #3d70a1;
+      width: 230px;
+      height: 40px;
+      color: #3d70a1;
+      text-transform: uppercase;
+      font-size: 22px;
+      line-height: 22px; }
+
+/*# sourceMappingURL=style1.css.map */

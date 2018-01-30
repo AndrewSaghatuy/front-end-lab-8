@@ -1,0 +1,264 @@
+
+$mainBackground: null !default;
+$contentBackground: null !default;
+$titleBackground: null !default;
+$imgBorderColor: null !default;
+$imgBorderColorInner: null !default;
+$briefBackground: null !default;
+$linkImg: null !default;
+$tableHeaderBackground: null !default;
+$thColor: null !default;
+$textColor: null !default;
+$formColor: null !default;
+$briefColor: null !default;
+$trBackground: null !default;
+$labelColor: null !default;
+$thBorder: null !default;
+
+@mixin img {
+
+  position: relative;
+
+  border: solid 2px $imgBorderColorInner;
+
+  outline: solid 2px $imgBorderColor;
+
+}
+
+
+@mixin col($variable) {
+
+  @if($variable == #fadcba) { width: 425px; } @else { width: 100%;}
+
+}
+
+body {
+
+  background-color: $mainBackground;
+
+  color: $textColor;
+
+}
+
+#content {
+
+  .fr {
+
+    float: right;
+
+  }
+
+
+  .fl {
+
+    float: left;
+
+  }
+
+  width: 960px;
+
+  margin: 0 auto;
+
+  background-color: $contentBackground;
+
+  padding: 20px;
+
+  h1 {
+
+    color: $titleBackground;
+
+    text-align: center;
+
+  }
+
+  h2 {
+
+    color: $titleBackground;
+
+  }
+
+  p {
+
+    width: 100%;
+
+  }
+
+  a {
+
+    color: $linkImg;
+
+  }
+
+  .img-left {
+
+    float: left;
+
+    margin: 0 18px 18px 0;
+
+  }
+
+  .img-right {
+
+    float: right;
+
+    margin: 0 0 18px 18px;
+
+  }
+
+  img {
+
+    @include img;
+
+  }
+
+
+  .brief {
+
+    position: relative;
+
+    float: left;
+
+    @include col($briefBackground);
+
+    background: $briefBackground;
+
+    padding: 20px;
+
+    box-sizing: border-box;
+
+    margin: 0 18px 18px 0;
+
+    color: $briefColor;
+
+  }
+
+  table {
+
+    border-collapse: collapse;
+
+    text-align: left;
+
+    caption {
+
+      text-align: right;
+
+    }
+
+    th {
+
+      text-transform: uppercase;
+
+      background: $thColor;
+
+      font-weight: 400;
+
+      padding: 10px;
+
+    }
+
+    th:not(:last-child) {
+
+      border-right: 1px solid $thBorder;
+
+    }
+
+    tr {
+
+      border-bottom: 1px solid $thColor;
+
+      background: $trBackground;
+
+      td {
+
+        padding: 10px;
+
+      }
+
+    }
+
+  }
+
+  form label {
+
+    display: block;
+
+    text-transform: uppercase;
+
+    margin-bottom: 5px;
+
+    color: $labelColor;
+
+  }
+
+  form {
+
+    color: $formColor;
+
+    .field {
+
+      position: relative;
+
+      display: block;
+
+      width: 100%;
+
+      margin-bottom: 15px;
+
+    }
+
+    input:not([type="submit"]) {
+
+      width: 100%;
+
+      box-sizing: border-box;
+
+      padding: 5px;
+
+      color: $formColor;
+
+    }
+
+    textarea {
+
+      width: 100%;
+
+      height: 180px;
+
+      box-sizing: border-box;
+
+      padding: 5px;
+
+      color: $formColor;
+
+    }
+
+   .double {
+
+     width: 477px;
+
+   }
+
+    input[type="submit"] {
+
+      background: $contentBackground;
+
+      border: 1px solid $linkImg;
+
+      width: 230px;
+
+      height: 40px;
+
+      color: $linkImg;
+
+      text-transform: uppercase;
+
+      font-size: 22px;
+
+      line-height: 22px;
+
+    }
+
+
+  }
+
+}
