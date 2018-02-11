@@ -38,7 +38,7 @@ if(side_a<=side_b+side_c && side_b<=side_a+side_c && side_c<=side_b+side_a) {
    perimeter = (side_a+side_b+side_c)/2;
    square = Math.sqrt(perimeter*(perimeter-side_a)*(perimeter-side_b)*(perimeter-side_c));
 
-   console.log('Type of triangle is ' + type_triangle + ' and square is ' + square.toFixed(2));
+   console.log('Type of triangle is ' + type_triangle + ' and square is ' + Math.trunc(square * 100) / 100);
 
 } else {
   console.log('Incorrect data');
