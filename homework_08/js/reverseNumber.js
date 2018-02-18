@@ -2,7 +2,7 @@
  * Get the reverse number
  *
  * @param number
- * @returns {string}
+ * @returns {Number}
  */
 function reverseNumber(number) {
     if(Number(number) && number % 1 === 0) {
@@ -14,10 +14,8 @@ function reverseNumber(number) {
             number = number.replace(/-/g, '');
             number += '-';
         }
-        return number.split('').reverse().join('');
+        return parseInt(number.split('').reverse().join(''));
     } else {
         console.log('Incorrect data!');
     }
 }
-
-alert(reverseNumber(1));
