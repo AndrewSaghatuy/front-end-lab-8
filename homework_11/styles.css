@@ -1,0 +1,38 @@
+/* Your styles goes here */
+#root ul {
+    list-style: none;
+    padding-left: 15px;
+    cursor: pointer;
+}
+
+#root ul ul {
+  display: none;
+}
+
+#root li.is_open > ul {
+  display: block;
+}
+
+#root span.empty_data {
+  font-style: italic;
+  padding-left: 5px;
+}
+
+#root .list_item {
+    cursor: pointer;
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+}
+
+#root .list_item:hover {
+    background: #e8e8e8;
+}
+
+#root ul li i.material-icons {
+    color: #fbb247;
+}
+
+#root ul li i.material-icons.is_file {
+    color: #9E9E9E;
+}
