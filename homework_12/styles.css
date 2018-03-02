@@ -1,0 +1,90 @@
+/* Your styles goes here */
+body {
+    background: #1C1C1F;
+}
+
+#root h1 {
+    color: #A19E86;
+    width: 100%;
+}
+
+#root h1 img {
+    margin-right: 10px;
+}
+
+#root .thumbnails, #root .tank-details {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#root .tank-details .detail-preview {
+    width: 35%;
+}
+
+#root .tank-details .detail-statistic {
+    width: 65%;
+}
+
+#root .thumbnail {
+    width: 15%;
+    min-width: 200px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#root .thumbnail:hover {
+    background: #2C2C2C;
+    cursor: pointer;
+}
+
+#root .thumbnail {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 30px;
+    color: #D7D2B7;
+    text-align: center;
+}
+
+#root .tank-details {
+    color: #A19E86;
+}
+
+#root .tank-details .title {
+    font-size: 26px;
+    line-height: 30px;
+    font-weight: bold;
+    width: 100%;
+}
+
+#root .tank-details .detail-preview a {
+    text-decoration: none;
+    color: #A19E86;
+}
+
+#root img.preview {
+    width: 100%;
+}
+
+#root .thumbnail .tank-title span.level {
+    color: #A19E86;
+    padding: 0 8px;
+}
+
+#root .thumbnail .tank-title {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#root .tank-details .detail-statistic table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    color: #D7D2B7;
+}
+
+#root .tank-details .detail-statistic table, #root .tank-details .detail-statistic td{
+    border: 1px solid #A19E86;
+    padding: 12px;
+}
